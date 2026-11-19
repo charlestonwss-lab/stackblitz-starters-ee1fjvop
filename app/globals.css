@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* IDENTIDADE VISUAL SOLOÁ */
+:root {
+  --creme: #fffcdf;
+  --verde: #758568;
+  --verde-claro: #c2cc9b;
+  --terracota: #d79c73;
+  --rosa: #c47773;
+  --texto: #758568;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--creme);
+  color: var(--texto);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* TABLETS */
+@media (max-width: 1024px) {
+  section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/* CELULARES */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 9vw, 3.5rem);
+    line-height: 1.12;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
+    line-height: 1.2;
+  }
+
+  button {
+    max-width: 100%;
+  }
+}
+
+/* CELULARES PEQUENOS */
+@media (max-width: 480px) {
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
